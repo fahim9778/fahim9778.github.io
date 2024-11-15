@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">FGZ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -38,7 +38,7 @@
     <!-- Hero Section -->
     <div class="jumbotron text-center">
         <h1>Md. Fakhruddin Gazzali Fahim</h1>
-        <p class="lead">Educator, Explorer, Technophile.</p>
+        <p class="lead">~ Educator, Explorer, Technophile. ~</p>
         <p>Exploring the wonders of life’s mysteries, seeking the magic where technology meets human curiosity.</p>
         <a href="#about" class="btn btn-primary">Discover My Journey</a>
     </div>
@@ -102,24 +102,33 @@
                 <h2>Research Areas</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal1" style="cursor: pointer;">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal1">
                             <div class="card-body">
+                                <div class="card-icon">
+                                    <img src="brain.png" alt="Digital Brain" class="icon-image">
+                                </div>
                                 <h5 class="card-title">LLM-Aided Software Engineering</h5>
                                 <p class="card-text">This research explores the transformative role of Large Language Models (LLMs) in software engineering, focusing on their ability to enhance development efficiency, code quality, and project management...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal2" style="cursor: pointer;">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal2">
                             <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
                                 <h5 class="card-title">Automated Code Generation Systems</h5>
                                 <p class="card-text">I am passionate about the potential of automated code generation, investigating how AI can be harnessed to improve coding efficiency and reduce manual efforts...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal3" style="cursor: pointer;">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#areaModal3">
                             <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
                                 <h5 class="card-title">LLMs in CS Education & Societal Expectances</h5>
                                 <p class="card-text">I explore how Large Language Models can revolutionize computer science education and shape our society's future through intelligent tutoring companions and AI-enhanced learning...</p>
                             </div>
@@ -134,7 +143,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="areaModal1Label">(LLM)-Based Software Engineering</h5>
+                        <h5 class="modal-title" id="areaModal1Label">LLM-Based Software Engineering</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -615,40 +624,52 @@
                 </div>
             </div>
         </div>
-<!-- Teaching Section -->
-<section id="teaching" class="section fade-in">
-    <div class="container">
-        <h2>Teaching</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Current Courses</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Course Name 1</h5>
-                        <span class="semester-tag current">Spring 2024 - Present</span>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Course Name 2</h5>
-                        <span class="semester-tag current">Spring 2024 - Present</span>
-                    </li>
-                </ul>
+        <!-- Teaching Section -->
+        <section id="teaching" class="section fade-in">
+            <div class="container">
+                <h2>Teaching</h2>
+                <div class="teaching-categories">
+                    <div class="teaching-category current">
+                        <div class="category-label">Current Courses</div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="semester-tag current">Summer 2022 - Present</span>
+                                <h5>CSE 221 : Algorithms</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="semester-tag current">Summer 2023 - Present</span>
+                                <h5>CSE 320: Data Communications</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="semester-tag current">Summer 2022 - Present</span>
+                                <h5>CSE 111: Programming Language II Lab</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="teaching-category previous">
+                        <div class="category-label">Previous Courses</div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="semester-tag">Summer 2022 - 2023</span>
+                                <h5>CSE 111: Programming Language II Theory</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="semester-tag">Summer 2021 - 2022</span>
+                                <h5>Object-Oriented Programming Lab</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="semester-tag">Summer 2021 - 2022</span>
+                                <h5>Database Management System Lab</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="semester-tag">Spring 2021</span>
+                                <h5>Android Programming</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Previous Courses</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Course Name 3</h5>
-                        <span class="semester-tag">Fall 2023</span>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Course Name 4</h5>
-                        <span class="semester-tag">Summer 2023</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Experience Section -->
         <section id="experience" class="section fade-in">
@@ -657,28 +678,14 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            <div class="timeline-date">2023 - Present</div>
-                            <h4>Faculty Member</h4>
+                            <div class="timeline-date">2022 - Present</div>
+                            <h4>Lecturer</h4>
                             <h5>BRAC University</h5>
                             <p>Department of Computer Science and Engineering</p>
                             <ul class="experience-details">
-                                <li>Teaching core computer science courses</li>
-                                <li>Conducting research in AI and Machine Learning</li>
-                                <li>Supervising undergraduate research projects</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2022 - 2023</div>
-                            <h4>Research Assistant</h4>
-                            <h5>Research Lab Name</h5>
-                            <p>Focus: Large Language Models and AI</p>
-                            <ul class="experience-details">
-                                <li>Developed novel approaches in NLP</li>
-                                <li>Published research papers in top-tier conferences</li>
-                                <li>Collaborated with international research teams</li>
+                                <li>Teaching foundational and advanced computer science courses to undergraduate students.</li>
+                                <li>Conducting research in LLMs and software engineering, exploring innovative solutions for education and development.</li>
+                                <li>Supervising undergraduate research thesis and projects.</li>
                             </ul>
                         </div>
                     </div>
@@ -686,13 +693,27 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="timeline-date">2021 - 2022</div>
-                            <h4>Software Engineer</h4>
-                            <h5>Company Name</h5>
-                            <p>AI and Machine Learning Division</p>
+                            <h4>Lecturer</h4>
+                            <h5>United International University (UIU)</h5>
+                            <p>Department of Computer Science and Engineering</p>
                             <ul class="experience-details">
-                                <li>Led development of ML-powered applications</li>
-                                <li>Implemented state-of-the-art AI models</li>
-                                <li>Mentored junior developers</li>
+                                <li>Conducted courses for Data Structure and Algorithm, DBMS Lab, Object Oriented Programming, etc.</li>
+                                <li>Developed and oversaw a variety of lab exercises for courses in CSE Department.</li>
+                                <li>Aided students in outreach and recruitment efforts.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <h4>Software Engineer Intern</h4>
+                            <h5>Nilavo Technologies Limited</h5>
+                            <p>Software Development Division</p>
+                            <ul class="experience-details">
+                                <li>Developed a centralized work management web app project using Java, JS, and Angular programming language.</li>
+                                <li>Maintained and upgraded products to deliver smooth-running operations.</li>
+                                <li>Collaborated with other developers to identify and alleviate several bugs and errors in software.</li>
                             </ul>
                         </div>
                     </div>
@@ -703,24 +724,24 @@
         <!-- Research Insights Section -->
         <section id="insights" class="section fade-in">
             <div class="container">
-                <h2>Research Insights</h2>
+                <h2>Draft Ideas to Explore</h2>
                 <div class="row">
                     <!-- Fun Facts Cards -->
                     <div class="col-md-6 mb-4">
                         <div class="insight-card fun-facts">
-                            <h4><i class="fas fa-lightbulb"></i> Did You Know?</h4>
+                            <h4><i class="fas fa-lightbulb"></i> Recently I am thinking on - </h4>
                             <div class="fact-list">
                                 <div class="fact-item">
                                     <i class="fas fa-star"></i>
-                                    <p>Large Language Models can now understand and generate human-like text in over 100 languages!</p>
+                                    <p>How Large Language Models can analyze and detect plagiarism in handwritten assignments using image-to-text recognition and contextual similarity algorithms?</p>
                                 </div>
                                 <div class="fact-item">
                                     <i class="fas fa-chart-line"></i>
-                                    <p>The field of AI has seen a 300% growth in research publications since 2015.</p>
+                                    <p>How good does Code LLMs perform to seamlessly transform code from one programming language to another while preserving logic, efficiency, and readability? </p>
                                 </div>
                                 <div class="fact-item">
                                     <i class="fas fa-code-branch"></i>
-                                    <p>Modern software engineering practices can reduce development time by up to 50%.</p>
+                                    <p>Is it ethical—or even safe—to explore ways to jailbreak LLMs? How do we address their vulnerabilities responsibly?</p>
                                 </div>
                             </div>
                         </div>
@@ -759,6 +780,34 @@
             </div>
         </section>
 
+        <div class="research-invite">
+            <div class="invite-content">
+                <div class="invite-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="invite-text">
+                    <h4>Sounds Interesting? Could you be — </h4>
+                    <div class="invite-points">
+                        <div class="point">
+                            <i class="fas fa-brain"></i>
+                            <span>Curious mind ready to innovate</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Bold thinker who challenges limits</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-code"></i>
+                            <span>Academic Ace and Code wizard with Python/LLM passion (A big plus!)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="invite-action">
+                    <a href="#connect" class="btn btn-light">Then, Let's Connect <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
         <!-- Connect Section -->
         <section id="connect" class="section fade-in">
             <div class="container">
@@ -769,22 +818,23 @@
                             <h4><i class="fas fa-globe"></i> Let's Connect</h4>
                             <p>Find me on academic and professional networks</p>
                             <div class="social-links">
-                                <a href="#" class="btn social-btn github" title="GitHub">
+                                <a href="https://github.com/fahim9778" class="btn social-btn github" title="GitHub" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="#" class="btn social-btn linkedin" title="LinkedIn">
+                                <a href="https://www.linkedin.com/in/gazzalifahim/" class="btn social-btn linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-linkedin"></i> LinkedIn
                                 </a>
-                                <a href="#" class="btn social-btn scholar" title="Google Scholar">
+                                <a href="https://scholar.google.com/citations?user=33TV8loAAAAJ&hl=en" class="btn social-btn scholar" title="Google Scholar" target="_blank" rel="noopener noreferrer">
                                     <i class="fas fa-graduation-cap"></i> Google Scholar
                                 </a>
-                                <a href="#" class="btn social-btn researchgate" title="ResearchGate">
-                                    <i class="fab fa-researchgate"></i> ResearchGate
+                                <a href="https://www.youtube.com/@gazzalifahim" class="btn social-btn youtube" title="YouTube" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i> YouTube
                                 </a>
                             </div>
                             <div class="contact-info mt-4">
-                                <p><i class="fas fa-envelope"></i> your.email@bracu.ac.bd</p>
-                                <p><i class="fas fa-map-marker-alt"></i> BRAC University, Dhaka, Bangladesh</p>
+                                <p><i class="fas fa-envelope"></i> fakhruddin.gazzali@bracu.ac.bd</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Room No # 4M103, 4th Floor, CSE Department, <br>BRAC University, Merul Badda, Dhaka 1212, Bangladesh</p>
+                                <p class="student-note"><i class="fas fa-info-circle"></i> BRACU Students: Please reach out via your GSuite email or visit me at my office.</p>
                             </div>
                         </div>
                     </div>
