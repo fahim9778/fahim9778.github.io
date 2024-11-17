@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.css');
 /* Academic website styles */
 :root {
     --primary-color: #1a237e;
@@ -12,6 +13,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: #fff;
+    margin-top: 80px; /* Ensure body content starts below the navbar */
 }
 
 /* Scroll Behavior */
@@ -70,10 +72,30 @@ html {
     color: var(--primary-color) !important;
 }
 
+.nav-link.active {
+    color: #4285f4 !important;
+    font-weight: 600;
+}
+
+.nav-link .idea-icon {
+    color: #f39c12; /* Keep the yellow color */
+    animation: bulbGlow 2s infinite alternate;
+    position: relative;
+}
+
+@keyframes bulbGlow {
+    from {
+        filter: drop-shadow(0 0 2px rgba(243, 156, 18, 0.4));
+    }
+    to {
+        filter: drop-shadow(0 0 6px rgba(243, 156, 18, 0.8));
+    }
+}
+
 /* Mobile-specific styles */
 @media (max-width: 991.98px) {
     .navbar {
-        padding: 0.15rem 0;
+        padding: 1rem 0; /* Increase padding to ensure visibility */
         background-color: rgba(255, 255, 255, 0.98) !important;
     }
 
@@ -114,11 +136,15 @@ html {
     .nav-link:hover {
         background: rgba(26, 35, 126, 0.05);
     }
+
+    .nav-link.active {
+        background: rgba(66, 133, 244, 0.1);
+    }
 }
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 0.3rem 0;
+        padding: 1rem 0; /* Increase padding to ensure visibility */
     }
 
     .navbar-collapse {
@@ -137,7 +163,7 @@ html {
 
 @media (max-width: 576px) {
     .navbar {
-        padding: 0.15rem 0;
+        padding: 1rem 0; /* Increase padding to ensure visibility */
     }
 
     .navbar-brand {
@@ -1137,6 +1163,28 @@ footer p {
     opacity: 0.9;
 }
 
+.footer-line {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.5rem;
+}
+
+.footer-line i {
+    color: red;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer-link:hover {
+    color: rgba(255, 255, 255, 1); /* Ensure it stays white */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Research Area Modal Styles */
 .area-modal .modal-content {
     border: none;
@@ -1468,6 +1516,26 @@ footer p {
 
 .fact-item:last-child {
     border-bottom: none;
+    background: linear-gradient(135deg, #e8f5ff, #f0f7ff);
+    border: 1px solid rgba(66, 133, 244, 0.15);
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.05);
+}
+
+.fact-item:last-child p {
+    font-weight: 600;
+    color: #1a73e8;
+    font-size: 0.92rem;
+}
+
+.fact-item:last-child i {
+    color: #1a73e8;
+    font-size: 1rem;
+}
+
+.fact-item:last-child:hover {
+    background: linear-gradient(135deg, #e3f2ff, #eaf4ff);
+    transform: translateX(3px);
+    box-shadow: 0 3px 6px rgba(66, 133, 244, 0.08);
 }
 
 .fact-item i {
@@ -1524,6 +1592,8 @@ footer p {
     border-radius: 8px;
     border: 1px solid rgba(26, 35, 126, 0.06);
     transition: all 0.2s ease;
+    opacity: 1; /* Ensure visibility */
+    visibility: visible; /* Make explicitly visible */
 }
 
 .fact-item:hover {
@@ -1536,6 +1606,7 @@ footer p {
     color: #4285f4;
     font-size: 0.85rem;
     margin-top: 0.2rem;
+    opacity: 1; /* Ensure icon visibility */
 }
 
 .fact-item p {
@@ -1545,6 +1616,7 @@ footer p {
     line-height: 1.6;
     font-weight: 400;
     letter-spacing: -0.1px;
+    opacity: 1; /* Ensure text visibility */
 }
 
 @media (max-width: 768px) {
@@ -2409,4 +2481,12 @@ footer p {
 .reading-item i {
     color: #4285f4;
     font-size: 1.2rem;
+}
+
+/* Email Style */
+.email-style {
+    font-family: 'Cascadia Code', monospace;
+    color: #2c3e50;
+    font-size: 1.05rem;
+    letter-spacing: -0.3px;
 }
