@@ -175,25 +175,25 @@ html {
 .jumbotron {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    padding: 7rem 2rem 4rem;
+    padding: 5rem 2rem 3rem;  /* Reduced from 7rem 2rem 4rem */
     margin-bottom: 0;
 }
 
 .jumbotron h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;  /* Slightly reduced from 2.8rem */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;  /* Reduced from 1rem */
 }
 
 .jumbotron .lead {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;  /* Slightly reduced from 1.4rem */
+    margin-bottom: 0.4rem;  /* Reduced from 0.5rem */
     font-weight: 500;
 }
 
 .jumbotron p {
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;  /* Reduced from 2rem */
     opacity: 0.9;
 }
 
@@ -216,13 +216,13 @@ html {
 
 @media (max-width: 768px) {
     .jumbotron {
-        padding-top: 5rem;
+        padding-top: 4rem;  /* Reduced from 5rem */
         text-align: center;
     }
 
     .jumbotron h1 {
         font-size: 1.8rem;
-        margin-top: 1rem;
+        margin-top: 0.8rem;  /* Reduced from 1rem */
     }
 
     .jumbotron .lead {
@@ -240,7 +240,7 @@ html {
 
 @media (max-width: 576px) {
     .jumbotron {
-        padding-top: 4.5rem;
+        padding-top: 3.5rem;  /* Reduced from 4.5rem */
     }
 
     .jumbotron h1 {
@@ -305,6 +305,12 @@ h2::after {
 .profile-image:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        margin-bottom: 2rem; /* Increase margin for smaller screens */
+    }
 }
 
 .academic-info {
