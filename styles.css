@@ -2496,3 +2496,58 @@ footer p {
     font-size: 1.05rem;
     letter-spacing: -0.3px;
 }
+
+/* Adjust styles for devices between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-section {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        align-items: center;
+    }
+
+    .profile-image {
+        flex: none;            /* Reset flex properties */
+        width: auto;           /* Allow width to adjust automatically */
+        max-width: 300px;      /* Optional max width */
+        height: auto;          /* Allow height to adjust automatically */
+        margin-bottom: 1.5rem; /* Add space below the image */
+    }
+
+    .about-content {
+        flex: 1 1 100%; /* Take full width */
+        text-align: center;
+    }
+}
+
+/* Adjust styles for devices between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-image {
+        margin-bottom: 2rem; /* Increase margin to prevent overlap */
+    }
+    
+    .about-content {
+        margin-top: 2rem; /* Add margin above the about content */
+    }
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .profile-image {
+        flex: none;            /* Reset flex properties */
+        width: 100%;           /* Take full width */
+        max-width: 300px;      /* Optional max width */
+        margin-bottom: 1.5rem; /* Add space below the image */
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+}
